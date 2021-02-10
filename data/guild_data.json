@@ -1,0 +1,105 @@
+{
+    "guild_id": "691384777172975699",
+    "guild_name": "Le serveur du confinement",
+    "guild_icon_id": "c1c52fbd0c46ce4dbb6532a7e0fbbf65",
+    "guild_banner_id": null,
+    "guild_member_count": 4,
+    "guild_members": {
+       "members":[
+          [
+             "747912816903585802",
+             "AD-BOT",
+             "AD-BOT",
+             "AD-BOT#4313",
+             "8367549ae048120fa8dd0eaf1b56b654",
+             "https://cdn.discordapp.com/embed/avatars/3.png",
+             "2020-08-25T20:18:31.098Z",
+             1598386711098,
+             true,
+             0,
+             null,
+             0,
+             104324681,
+             0,
+             "#000000",
+             "Finished"
+          ],
+          [
+             "392769773886242816",
+             "Amata",
+             "Amata",
+             "Amata#2833",
+             "900a326f28c607dad0d055570ee9c953",
+             "https://cdn.discordapp.com/embed/avatars/3.png",
+             "2017-12-19T20:06:51.404Z",
+             1513714011404,
+             false,
+             0,
+             "2018-01-12T20:03:51.404Z",
+             null,
+             2147483647,
+             0,
+             "#000000",
+             "Warum bist du sooo hässlich?"
+          ],
+          [
+             "666333768193409063",
+             "IchBinHanz",
+             "IchBinHanz",
+             "IchBinHanz#3098",
+             "249a7e5a0f0c673736ba62db0901c19e",
+             "https://cdn.discordapp.com/embed/avatars/3.png",
+             "2020-01-13T17:32:30.220Z",
+             1578936750220,
+             false,
+             128,
+             null,
+             null,
+             104324681,
+             0,
+             "#000000",
+             "Ich bin echt sehr schön"
+          ],
+          [
+             "666333768193809063",
+             "IchBinSchwanz",
+             "IchBinSchwanz",
+             "IchBinSchwanz#3390",
+             "249a7e5a0f0c673736ba62db0901c19e",
+             "https://cdn.discordapp.com/embed/avatars/3.png",
+             "2020-01-13T17:32:30.220Z",
+             1578936750220,
+             false,
+             128,
+             null,
+             null,
+             104324681,
+             0,
+             "#000000",
+             "Was isst du gleich."
+          ]
+       ]
+    },
+    "guild_channels": {
+       "text_channels": [
+          [
+             "691384777172975702",
+             "Haupt Chat",
+             false,
+             false
+          ],
+          [
+             "764881144583421972",
+             "Spiele spielen",
+             false,
+             false
+          ],
+          [
+             "764881175134732299",
+             "Suche nach gegner",
+             false,
+             false
+          ]
+       ]
+    }
+}

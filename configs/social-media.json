@@ -1,0 +1,24 @@
+{
+    "sm": {
+        "youtube": {
+            "tld": "youtube.com",
+            "name": "youtube",
+            "short_name": "yt"
+        },
+        "twitch": {
+            "tld": "twitch.tv",
+            "name": "twitch",
+            "short_name": "tw"
+        },
+        "instagram": {
+            "tld": "instagram.com",
+            "name": "instagram",
+            "short_name": "ig"
+        }
+    },
+    "banned_key_words": {
+        "youtube": ["playlists", "watch", "videos", "featured"],
+        "twitch": ["clips"],
+        "instagram": ["post","/p/"]
+    }
+}

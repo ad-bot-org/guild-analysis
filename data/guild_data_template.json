@@ -1,0 +1,65 @@
+{
+    "guild_id": "msg.guild.id",
+    "guild_name": "msg.guild.name",
+    "guild_icon_id": "msg.guild.icon",
+    "guild_banner_id": "msg.guild.banner",
+    "guild_member_count": "msg.guild.memberCount",
+    "guild_members": {
+        "members": [
+            [
+                "m.user.id",
+                "m.displayName",
+                "m.user.username",
+                "m.user.tag",
+                "m.user.avatar",
+                "m.user.defaultAvatarURL",
+                "m.user.createdAt",
+                "m.user.createdTimestamp",
+                "m.user.bot",
+                "m.user.flags",
+                "m.premiumSince",
+                "m.premiumSinceTimestamp",
+                "m.permissions",
+                "m.displayColor",
+                "m.displayHexColor",
+                "last_msg"
+            ],
+            [
+                "m.user.id",
+                "m.displayName",
+                "m.user.username",
+                "m.user.tag",
+                "m.user.avatar",
+                "m.user.defaultAvatarURL",
+                "m.user.createdAt",
+                "m.user.createdTimestamp",
+                "m.user.bot",
+                "m.user.flags",
+                "m.premiumSince",
+                "m.premiumSinceTimestamp",
+                "m.permissions",
+                "m.displayColor",
+                "m.displayHexColor",
+                "null"
+            ]
+        ]
+    },
+    "guild_channels": {
+        "text_channels": [
+            [
+                "chn.id",
+                "chn.name",
+                "chn.deleted",
+                "chn.nsfw"
+
+            ],
+            [
+                "chn.id",
+                "chn.name",
+                "chn.deleted",
+                "chn.nsfw"
+
+            ]
+        ]
+    }
+}

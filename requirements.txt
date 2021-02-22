@@ -1,4 +1,4 @@
 flask
 langdetect
-googlesearch
+googlesearch-python
 requests

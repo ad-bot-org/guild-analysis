@@ -4,8 +4,8 @@ import json
 import os
 import time as t
 
-def get_sm(guild_name):
-    with open("configs/social-media.json", "r") as sm_file:
+def get_sm(guild_name, config_path):
+    with open(config_path, "r") as sm_file:
         j_sm = json.load(sm_file)
     social_media = {
         "youtube": {
@@ -35,8 +35,8 @@ def get_sm(guild_name):
 
 
 
-def get_sm_infos(sm_status):
-    with open("configs/api-keys.json", "r") as ak_file:
+def get_sm_infos(sm_status, ak_config_path):
+    with open(ak_config_path, "r") as ak_file:
         j_ak = json.load(ak_file)
 
     youtube_sm = None

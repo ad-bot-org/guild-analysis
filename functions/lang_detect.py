@@ -4,17 +4,17 @@ class LangDetect():
         get the language of the messages
         '''
         from langdetect import detect as detect
-        bot_cmd_prefix = ["+", "!", "/"]
+        bot_cmd_prefix = ["+", "!", "/", "$"]
         last_msgs_lang = []
         for i in members:
-            if i[15] == None or i[8] == True:
+            if i["last_message"] == None or i["bot"] == True:
                 continue
             is_bot_cmd = False
             for k in bot_cmd_prefix:
-                if i[15].startswith(k):
+                if i["last_message"].startswith(k):
                     is_bot_cmd = True
             if not is_bot_cmd:
-                last_msgs_lang.append(detect(i[15]))
+                last_msgs_lang.append(detect(i["last_message"]))
         freq_msg_lang = max(set(last_msgs_lang), key=last_msgs_lang.count)
         return freq_msg_lang
     
@@ -25,9 +25,9 @@ class LangDetect():
         from langdetect import detect as detect
         txt_channels_langs = []
         for i in channels:
-            if i[1] == None:
+            if i["name"] == None:
                 continue
-            txt_channels_langs.append(detect(i[1]))
+            txt_channels_langs.append(detect(i["name"]))
         freq_channels_lang = max(set(txt_channels_langs), key=txt_channels_langs.count)
         return freq_channels_lang
 
@@ -42,15 +42,3 @@ class LangDetect():
                 t_lang.append(langs[i])
         freq_t_lang = max(set(t_lang), key=t_lang.count)
         return freq_t_lang
-
-
-# '''
-# get the richness of the server
-# '''
-# mems_has_premium = 0
-# for i in g_data["guild_members"]["members"]:
-#     if i[8] == True:
-#         continue
-#     if not i[10] == None:
-#         mems_has_premium=+1
-# print(str(mems_has_premium)+"/"+str(g_data["guild_member_count"]))

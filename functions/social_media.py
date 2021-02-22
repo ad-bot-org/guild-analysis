@@ -1,7 +1,6 @@
 from googlesearch import search
 import requests
 import json
-import os
 import time as t
 
 def get_sm(guild_name, config_path):

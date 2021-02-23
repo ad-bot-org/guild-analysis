@@ -20,7 +20,14 @@ def get_sm(guild_name, config_path):
             "url": None
         }
     }
-    for resp_url in search(guild_name, tld="com", num=20, stop=20, pause=1):
+    try:
+        search_res = search(guild_name, tld="com", num=20, stop=20, pause=1)
+    except:
+        try:
+            search_res = search(guild_name, num_results=20)
+        except :
+            search_res = []
+    for resp_url in search_res:
         is_untrue_url = False
         for s_k in j_sm["sm"]:
             if resp_url.find(j_sm["sm"][s_k]["tld"]) < 13 and not resp_url.find(j_sm["sm"][s_k]["tld"]) == -1:

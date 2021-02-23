@@ -8,8 +8,7 @@ app.config["DEBUG"] = True
 @app.route('/guild-data-analysis', methods=['POST'])
 def main():
     request_data = request.get_json()
-    print(request_data)
     df = analysisGuild(request_data)
     return jsonify(df)
 
-app.run(port=5000)
+app.run(host='0.0.0.0', port=5000)

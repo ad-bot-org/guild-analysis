@@ -25,14 +25,21 @@ def analysisGuild(g_data):
     df["guild_lang"] = most_freq_lang
 
     try:
-        sm_i = get_sm(g_data["guild_name"], "configs/social-media.json")
-        yt_resp, tw_resp, ig_resp = get_sm_infos(sm_i, "configs/api-keys.json")
-        socials = {
-            "youtube": yt_resp,
-            "twitch": tw_resp,
-            "instagram": ig_resp,
-        }
-        df["guild_social_media"] = socials
+        try:
+            sm_i = get_sm(g_data["guild_name"], "configs/social-media.json")
+        except:
+            print("Error: Cannot get Google Search urls.")
+        if not sm_i == None:
+            try:
+                yt_resp, tw_resp, ig_resp = get_sm_infos(sm_i, "configs/api-keys.json")
+                socials = {
+                    "youtube": yt_resp,
+                    "twitch": tw_resp,
+                    "instagram": ig_resp,
+                }
+                df["guild_social_media"] = socials
+            except:
+                print("Error: Cannot process social medias.")
     except:
         print("Expect Occured!")
         df["guild_social_media"] = {
